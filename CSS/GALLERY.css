@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Navbar */
 .navbar{
+    z-index: 10;
     display: flex;
     justify-content: right;
-    background-color: rgba(255, 255, 255, 0.568);
-    position: sticky;
+    background-color: rgba(0, 0, 0, 0.568);
     top: 0;
 }
 .navbar ul{
@@ -29,88 +31,125 @@
     transition: all .5s ease;
 }
 .navbar ul li a:hover{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    box-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255), 0 0 15px rgb(255, 255, 255);
     font-weight: bold;
 }
 /* Home Section */
 #home{
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    background-color: rgba(0,0,0,0.5);
     justify-content: center;
     align-items: center;
-    color: white;
 }
 #home::before{
     content: "";
-    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 0;
     right: 0;
-    background: url('../IMAGES/bg.jpg') no-repeat center center/cover;
-    height: 1500px;
+    background: url('../IMAGES/bg3.jpg');
+    height: 240vh;
     width: 100%;
     z-index: -1;
 }
 .main{
     display: flex;
     flex-direction: column;
-    /* border: 1px solid white; */
     align-items: center;
     position: absolute;
-    top: 10%;
-    left: 25%;
+    top: 13%;
 }
 .headings{
+    font-weight: bold;
     font-family: serif;
-    font-size: 2rem;
+    font-size: 100px;
     text-align: center;
     margin: 5px 0px;
     color: rgb(255, 255, 255);
 }
 .headings1{
+    display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	column-gap: .5rem;
+    padding-bottom: 20px;
     font-family: serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     margin: 0px 0px;
     color: rgb(255, 255, 255);
 }
+.line{
+    width: 100%;
+}
 .grid {
-    position: relative;
+    padding-top: 40px;
+    display: flex;
     justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
-	grid-gap: 1rem;
+	grid-gap: 3rem;
 }
 .grid>div {
-    justify-self: center;
+    justify-content: center;
 }
 .grid img {
 	border-radius: 10px;
-	width: 500px;
+	width: 400px;
 	height: 300px;
 	object-fit:cover;
-	object-position: center;
+	justify-content: center;
 }
-
-/* .d{
-    overflow-x: hidden;
-    overflow-y: hidden;
-} */
-
+.grid2 {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+	grid-gap: 3rem;
+}
+.grid2>div {
+    justify-content: center;
+}
+.grid2 img {
+	border-radius: 10px;
+	width: 400px;
+	height: 300px;
+	object-fit:cover;
+}
+.grid3 {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+	grid-gap: 3rem;
+}
+.grid3>div {
+    justify-content: center;
+}
+.grid3 img {
+	border-radius: 10px;
+	width: 400px;
+	height: 300px;
+	object-fit:cover;
+    margin-bottom: 40px;
+}
+.line{
+    width: 100%;
+}
 .picture:hover {
     display: flex;
     transition-duration: 0.5s;
     position: relative;  
     width: 500px;
-    height:auto;
-    display: block;
-    z-index:999;
+    height: 500px;
+    z-index: 999;
     cursor: pointer;
 }
+#btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 90em;
+}
 .btn{
+    font-size: 20px;
     padding: 10px 35px;
     background-color: transparent;
     border-radius: 13px;
@@ -138,18 +177,6 @@
 	transition-duration: 0.4s;	
 	cursor: pointer;
 }
-
-.button1 {
-	background-color: transparent; 
-	color: #fefefe; 
-	border: 3px solid #ffffff;
-}
-
-.button1:hover {
-	background-color: #ffffff;
-	color: black;
-}
-
 footer{
 	position: relative;
 	width: 100%;
@@ -159,7 +186,7 @@ footer{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-top: 100%;
+	margin-top: 4.2em;
 }
 footer p:nth-child(1){
 	font-size: 30px;
@@ -187,7 +214,7 @@ footer p:nth-child(2){
 	background:  #ffffff;
 	border-radius: 50%;
 	margin: 22px 10px;
-	color: white;
+	color: rgb(0, 0, 0);
 	text-decoration: none;
 	font-size: 20px;
 }
@@ -197,7 +224,7 @@ footer p:nth-child(2){
 }
 .end{
 	position: absolute;
-	color:#ff0000;
+	color:#fdfdfd;
 	bottom: 35px;
 	font-size: 14px; 
 }

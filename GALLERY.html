@@ -4,51 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="../CLARION FNAL CSS HTML/CSS/GALLERY.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>GALLERY</title>
 </head>
 <body>
     <nav class="navbar">
         <ul>
-            <li><a href="HOME.html">Home</a></a></li>
-            <li><a href="ABOUT.html">About</a></a></li>
-            <li><a href="GALLERY.html">Gallery</a></a></li>
-            <li><a href="CONTACT.html">Contact</a></a></li>
+            <li><a href="HOME.html">Home</a></li>
+            <li><a href="ABOUT.html">About</a></li>
+            <li><a href="GALLERY.html" id="active">Gallery</a></li>
+            <li><a href="CONTACT.html">Contact</a></li>
         </ul>
     </nav>
     
     <div class="page-grid"></div>
 
-    <nav class="navbar">
-    </nav>
-
     <section id="home">
         <div class="main">
-            <h1 class="headings">MY GALLERY</h1><br>
-            <h2 class="headings1">Here are some awesome Art Photographs</h2><br><br>
+            <h1 class="headings">MY <span style="color: blue;">GALLERY</span></h1><br>
+            <h2 class="headings1">___________________<span style="color: white;">Here are Some<br><span style="color: rgb(0, 110, 255);">of My Photographs</span></span>__________________</h2><br><br>
+            <hr class="line">
             <div class="grid">
-                <div class="d1"><img src="../CLARION FNAL CSS HTML/IMAGES/image1.jpg" class="picture"></div>
-                <div class="d2"><img src="../CLARION FNAL CSS HTML/IMAGES/image2.jpg" class="picture"></div>
-                <div class="d3"><img src="../CLARION FNAL CSS HTML/IMAGES/image3.jpg" class="picture"></div>
+                <div><img src="../CLARION FNAL CSS HTML/IMAGES/image1.jpeg" class="picture"></div>
+                <div><img src="../CLARION FNAL CSS HTML/IMAGES/image2.jpg" class="picture"></div>
+                <div><img src="../CLARION FNAL CSS HTML/IMAGES/image3.jpeg" class="picture"></div>
             </div>
-            <br><br><br><br><br>
-            <button class="btn">
-                More Pictures
-            </button>
+            <div class="grid2">
+                <div><img src="../CLARION FNAL CSS HTML/IMAGES/image4.jpg" class="picture"></div>
+                <div><img src="../CLARION FNAL CSS HTML/IMAGES/image5.jpg" class="picture"></div>
+                <div><img src="../CLARION FNAL CSS HTML/IMAGES/image6.jpg" class="picture"></div>
+            </div>
+            <div class="grid3">
+                <div><img src="../CLARION FNAL CSS HTML/IMAGES/image7.jpg" class="picture"></div>
+                <div><img src="../CLARION FNAL CSS HTML/IMAGES/image8.jpg" class="picture"></div>
+                <div><img src="../CLARION FNAL CSS HTML/IMAGES/image9.jpg" class="picture"></div>
+                
+            </div>
+            <hr class="line">
         </div>
     </section>
+    <section id="btn">
+        <a href="PICTURE.html"><button class="btn">
+            More Pictures
+        </button></a>
+    </section>
     <footer>
-		<p><span>Reysil M. Clarion</span></p>
-		<p>BSET Student</p>
+		<p><span style="color: blue">Reysil M. Clarion</span></p>
+		<p>Computer Engineering Student</p>
 		<div class="social">
-			<a href="#"><i class="fab fa-facebook-f"></i></a>
-			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="https://www.facebook.com/me/"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.fa-instagram.com/me/"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-discord"></i></a>
 			<a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-viber"></i></a>
 		</div>
-		<p class="end">Copyright by: PraRoZ17</p>
+		<p class="end">Copyright by: LiQ<span style="color: red;">wiD</span>17</p>
 	</footer>
 </body>
 </html>

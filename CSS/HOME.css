@@ -1,15 +1,17 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Navbar */
 .navbar{
     display: flex;
     justify-content: right;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgb(0, 0, 0);
     position: sticky;
     top: 0;
 }
@@ -39,7 +41,7 @@
 #home{
     display: flex;
     flex-direction: column;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgb(0, 0, 0);
     justify-content: right;
     align-items: center;
     color: white;
@@ -50,15 +52,14 @@
     position: absolute;
     top: 0;
     right: 0;
-    background: url('../IMAGES/pg.PNG') no-repeat center center/cover;
-    height: 650px;
+    background: url('../IMAGES/pg.jpg');
+    height: 100%;
     width: 100%;
     z-index: -1;
 }
 .main{
     display: flex;
     flex-direction: column;
-    /* border: 1px solid white; */
     align-items: flex-start;
     position: absolute;
     top: 2%;
@@ -69,7 +70,7 @@
     font-size: 2rem;
     text-align: right;
     margin: 1px 0px;
-    color: rgb(255, 61, 61);
+    color: rgb(255, 255, 255);
 }
 .headings{
     font-family: sans-serif;
@@ -86,8 +87,9 @@
     color: rgb(255, 255, 255);
 }
 .headings3{
-    font-family: sans-serif;
-    font-size: 1rem;
+    font-weight: 500;
+    font-family: serif;
+    font-size: 1.2rem;
     text-align: right;
     margin: 5x 0px;
 }
@@ -106,6 +108,4 @@
     color: black;
     box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
     font-weight: bold;
-}
-
-/* About Section*/
+}   

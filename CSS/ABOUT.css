@@ -1,17 +1,16 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-
-/* Navbar */
 .navbar{
     display: flex;
     justify-content: right;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     position: sticky;
-    top: 0;
 }
 .navbar ul{
     display: flex;
@@ -30,76 +29,72 @@
     transition: all .5s ease;
 }
 .navbar ul li a:hover{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    box-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255), 0 0 15px rgb(255, 255, 255);
     font-weight: bold;
 }
 /* Home Section */
 #home{
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(0,0,0,0.5);
-    justify-content: center;
-    align-items: center;
     color: white;
 }
 #home::before{
     content: "";
-    align-items: center;
     position: absolute;
     top: 0;
     right: 0;
-    background: url('../IMAGES/bg.jpg') no-repeat center center/cover;
-    height: 650px;
+    background: url('../IMAGES/bg.jfif') no-repeat center center/cover;
+    height: 115vh;
     width: 100%;
     z-index: -1;
 }
 .main{
     display: flex;
     flex-direction: column;
-    /* border: 1px solid white; */
     align-items: center;
     position: absolute;
-    top: 10%;
-    left: 4%;
+    top: 15%;
+    left: 25%;
 }
 .headings{
     font-family: serif;
     font-size: 3rem;
     text-align: center;
     margin: 5px 0px;
-    color: rgb(255, 255, 255);
+    color: rgb(243, 243, 243);
 }
 .headings1{
     font-family: serif;
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: right;
     margin: 0px 0px;
-    color: rgb(255, 255, 255);
+    color: rgba(240, 240, 240, 0.95);
 }
 .headings2{
     font-family: sans-serif;
     font-size: 0.8rem;
     text-align: justify;
-    margin: 10px 385px;
+    margin: 10px 200px;
     color: rgb(255, 255, 255);
 }
 .headings3{
     font-family: sans-serif;
     font-size: 0.8rem;
     text-align: justify;
-    margin: 1px 385px;
+    margin: 1px 200px;
     color: rgb(255, 255, 255);
 }
 .headings4{
     font-family: sans-serif;
     font-size: 0.8rem;
     text-align: justify;
-    margin: 1px 385px;
+    margin: 1px 200px;
     color: rgb(255, 255, 255);
 }
 .btn{
+    margin-top: 20px;
+    font-size: 23px;
+    width: 250px;
     padding: 10px 35px;
     background-color: transparent;
     border-radius: 13px;
